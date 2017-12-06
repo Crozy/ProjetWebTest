@@ -12,5 +12,11 @@ steps{
 	bat 'mvn -B -DskipTests clean package'
 	}
    }
+
+stage('tomCat') {
+   steps{
+   	bat 'mvn tomcat:deploy'
+   	}
+   }
 }
 }
