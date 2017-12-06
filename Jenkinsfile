@@ -15,7 +15,7 @@ steps{
 
 stage('tomCat') {
    steps{
-   	bat 'mvn tomcat:deploy'
+   	bat 'tomcat:deploy'
    	}
    }
 }
